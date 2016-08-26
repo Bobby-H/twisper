@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   get '/home' => 'pages#home'
-  get '/user/:id' => 'pages#profile'
+  get '/:id' => 'pages#profile'
   get '/explore' => 'pages#explore'
   get '/help' => 'pages#help'
   get '/edit' => 'pages#edit'
