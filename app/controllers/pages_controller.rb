@@ -3,12 +3,15 @@ class PagesController < ApplicationController
   end
 
   def home
+    @posts = Post.all
   end
 
   def profile
+    @posts = Post.all
   end
 
   def explore
+    @posts = Post.all
   end
 
   def help
