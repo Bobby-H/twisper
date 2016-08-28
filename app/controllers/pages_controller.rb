@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def home
+    @posts = Post.all
   end
 
   def profile
@@ -12,9 +13,11 @@ class PagesController < ApplicationController
       # redirect_to 404
       redirect_to root_path, :notice => 'User not found!'
     end
+    @posts = Post.all
   end
 
   def explore
+    @posts = Post.all
   end
 
   def help
