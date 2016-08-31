@@ -1,12 +1,12 @@
 <%= form_for(@newPost) do |np| %>
 
   <div class="field">
-    <%= f.label :content %><br />
-    <%= f.text_field :content %>
+    <%= np.label :content %><br />
+    <%= np.text_field :content %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Update" %>
+  <div cnpass="actions">
+    <%= np.submit "Submit" %>
   </div>
 
 <% end %>
