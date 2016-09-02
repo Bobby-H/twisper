@@ -1,0 +1,12 @@
+<%= form_for(@newPost) do |np| %>
+
+  <div class="field">
+    <%= np.label :content %><br />
+    <%= np.text_field :content %>
+  </div>
+
+  <div cnpass="actions">
+    <%= np.submit "Submit" %>
+  </div>
+
+<% end %>
