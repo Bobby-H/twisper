@@ -4,8 +4,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new
-    @post.user_id = current_user.id
+    @post = Post.new(post_params)
     respond_to do |f|
       if (@post.save)
         f.html { redirect_to '', notice: 'Post created!' }
@@ -15,5 +14,8 @@ class PostsController < ApplicationController
     end
 
   end
-
+  private
+  def post_params
+    params.require(:post).permit(:user_id, :content)
+  end
 end
