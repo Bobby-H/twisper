@@ -1,37 +1,41 @@
+
 <nav class="navbar navbar-default">
-  <div class="container">
+  <div class="container-fluid container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">[Flitter]</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-
         <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
-        <li><a href="#">Featured<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Sports<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">News<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Music<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Entertainment<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Lifestyle<span class="sr-only">(current)</span></a></li>
+        <li><a href="https://twitter.com/">Featured<span class="sr-only">(current)</span></a></li>
+        <li><a href="https://twitter.com/i/streams/category/686639666771046402">Sports<span class="sr-only">(current)</span></a></li>
+        <li><a href="https://twitter.com/i/streams/category/686639666779394057">News<span class="sr-only">(current)</span></a></li>
+        <li><a href="https://twitter.com/i/streams/category/686639666779426835">Music<span class="sr-only">(current)</span></a></li>
+        <li><a href="https://twitter.com/i/streams/category/686639666779394055">Entertainment<span class="sr-only">(current)</span></a></li>
+        <li><a href="https://twitter.com/i/streams/category/686639666779426842">Lifestyle<span class="sr-only">(current)</span></a></li>
         <li><a href="#">More<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Navigation<span class="caret"></span></a>
+
           <ul class="dropdown-menu">
             <li><a href="/help">Help</a></li>
             <li role="separator" class="divider"></li>
-            <li><%= link_to 'Log In', new_user_session_path %></li>
             <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+            <li role="separator" class="divider"></li>
+            <li><%= link_to 'Log In', new_user_session_path %></li>
           </ul>
+
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
