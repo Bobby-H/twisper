@@ -50,10 +50,10 @@
         share interests & share adventures.
       </p>
     </div>
-      <div class="col-sm-6">
 
-        <div class="btn btn-default btn-lg">
-          <%= form_for(:user, :url => session_path(:user)) do |f| %>
+    <div class="col-sm-6">
+      <div class="btn btn-default btn-lg">
+        <%= form_for(:user, :url => session_path(:user)) do |f| %>
           <%= f.label :email %> <br>
           <%= f.text_field :email %> <br>
           <%= f.label :password %> <br>
@@ -62,33 +62,32 @@
           <%= f.label :remember_me %><br>
           <%= f.submit 'Sign in' %><br>
           <%= link_to "Forgot your password?", new_password_path(:user) %>
-          <% end %>
-        </div>
-
-        <div class="btn btn-default btn-lg">
-          <%= form_for(:user, url: registration_path(:user)) do |f| %>
-            <%= f.label :username %><br />
-            <%= f.text_field :username, autofocus: true %><br>
-            <%= f.label :email %><br />
-            <%= f.email_field :email %><br>
-            <%= f.label :password %>
-
-            <% if @minimum_password_length %>
-              <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %><br>
-
-            <%= f.password_field :password, autocomplete: "off" %><br>
-            <%= f.label :password_confirmation %><br>
-            <%= f.password_field :password_confirmation, autocomplete: "off" %><br>
-            <%= f.submit 'Sign up' %>
-          <% end %>﻿
-        </div>
-
+        <% end %>
       </div>
 
-      <div class="col-sm-12">
-        <p class="footer-links">About  Help  Blog  Status  Jobs  Terms  Privacy  Cookies  Ads  info  Brand  Apps  Advertise  Businesses  Media Developers Directory ©2016 Flitter</p>
+      <div class="btn btn-default btn-lg">
+        <%= form_for(:user, url: registration_path(:user)) do |f| %>
+          <%= f.label :username %><br />
+          <%= f.text_field :username, autofocus: true %><br>
+          <%= f.label :email %><br />
+          <%= f.email_field :email %><br>
+          <%= f.label :password %>
+
+          <% if @minimum_password_length %>
+            <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br>
+
+          <%= f.password_field :password, autocomplete: "off" %><br>
+          <%= f.label :password_confirmation %><br>
+          <%= f.password_field :password_confirmation, autocomplete: "off" %><br><br>
+          <%= f.submit 'Sign up' %>
+        <% end %>﻿
       </div>
+    </div>
+
+    <div class="col-sm-12">
+      <p class="footer-links">About  Help  Blog  Status  Jobs  Terms  Privacy  Cookies  Ads  info  Brand  Apps  Advertise  Businesses  Media Developers Directory ©2016 Flitter</p>
+    </div>
   </div>
   <% else %>
   <script>document.location = "/home"</script>
