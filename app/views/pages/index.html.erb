@@ -76,13 +76,14 @@
             <%= f.text_field :email %> <br>
             <%= f.label :password %> <br>
             <%= f.password_field :password %> <br>
-            <%= f.label :remember_me %> <br>
-            <%= f.check_box :remember_me %> <br>
-            <%= link_to "Forgot your password?", new_password_path(:user) %><br>
-            <%= f.submit 'Sign in' %>
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %><br>
+            <%= f.submit 'Sign in' %><br>
+            <%= link_to "Forgot your password?", new_password_path(:user) %>
           <% end %>
         </div>
       </div>
+      
       <div class="col-sm-12">
         <p class="footer-links">About  Help  Blog  Status  Jobs  Terms  Privacy  Cookies  Ads  info  Brand  Apps  Advertise  Businesses  Media Developers Directory ©2016 Flitter</p>
       </div>
