@@ -54,24 +54,25 @@
         <div class="btn btn-default btn-lg">
           <%= form_for(:user, url: registration_path(:user)) do |f| %>
             <%= f.label :username %><br />
-            <%= f.text_field :username, autofocus: true %>
+            <%= f.text_field :username, autofocus: true %><br>
             <%= f.label :email %><br />
-            <%= f.email_field :email %>
+            <%= f.email_field :email %><br>
             <%= f.label :password %>
 
             <% if @minimum_password_length %>
               <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %><br />
+            <% end %><br>
 
-            <%= f.password_field :password, autocomplete: "off" %>
-            <%= f.label :password_confirmation %><br />
-            <%= f.password_field :password_confirmation, autocomplete: "off" %>
+            <%= f.password_field :password, autocomplete: "off" %><br>
+            <%= f.label :password_confirmation %><br>
+            <%= f.password_field :password_confirmation, autocomplete: "off" %><br><br>
             <%= f.submit "Sign up" %>
           <% end %>﻿
         </div>
 
         <div class="btn btn-default btn-lg">
           <%= form_for(:user, :url => session_path(:user)) do |f| %>
+            <%= f.label :email %> <br>
             <%= f.text_field :email %> <br>
             <%= f.password_field :password %> <br>
             <%= f.check_box :remember_me %> <br>
