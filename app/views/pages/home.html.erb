@@ -14,30 +14,40 @@
   </div>
   <div class="col-xs-6">
     <center><%= render 'components/post_form' %></center><br><br>
-    <% for @p in @posts %>
-      <div class="panel panel-default post-panel">
-        <div class="panel-body row">
+      <% for @p in @posts %>
+        <div class="panel panel-default post-panel">
+          <div class="panel-body row">
 
-          <div class="col-sm-1">
-            <span class="glyphicon glyphicon-user" aria-hidden="true""></span>
-          </div>
-          <div class="col-sm-11">
-            <p class="post-title"><span class="post-owner"><%= User.find(@p.user_id).username %></span> - <span class="post-content"><%= @p.created_at.to_formatted_s(:short) %></span></p>
-            <p class="post-content"><%= @p.content %></p>
-          </div>
+            <div class="col-sm-1">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </div>
+            <div class="col-sm-11">
+              <p class="post-title"><span class="post-owner"><%= User.find(@p.user_id).username %></span> - <span class="post-content"><%= @p.created_at.to_formatted_s(:short) %></span></p>
+              <p class="post-content"><%= @p.content %></p>
+            </div>
 
-          <div class="col-sm-12">
-            <p class="post-links">
-              <span class="glyphicon glyphicon-comment g-links" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-retweet g-links" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-heart g-links" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-option-horizontal g-links" aria-hidden="true"></span>
-            </p>
-          </div>
+            <div class="col-sm-12">
+              <p class="post-links">
+                <span class="glyphicon glyphicon-comment g-links" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-retweet g-links" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-heart g-links" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-option-horizontal g-links" aria-hidden="true"></span>
+              </p>
+            </div>
 
+          </div>
+        </div>
+      <% end %>
+
+    <div class="panel panel-default post-panel">
+      <div class="panel-body row">
+        <div class="col-sm-12">
+          <center><img src="/logo.png" height="25px" width="25px">
+            <a href="#top"><p class="opacity: .7;">Back to top <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></p></a>
+          </center>
         </div>
       </div>
-    <% end %>
+    </div>
 
   </div>
   <div class="col-xs-3">
