@@ -72,10 +72,20 @@ body {
   height: 500px;
   margin-top: -21px;
 }
+
 .resources li {
   list-style-type: none;
   color: #8899a6;
-  a {
-    color: #8899a6;
+}
+
+.resources a {
+  color: #8899a6;
+  float: left;
+}
+
+#container {
+  width: 300px;
+  ul a {
+    float: left;
   }
 }
