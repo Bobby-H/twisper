@@ -40,6 +40,7 @@ body {
 .post-content {
   text-align: left;
   margin-left: 15px;
+  color: grey;
 }
 
 .post-links {
@@ -51,8 +52,8 @@ body {
   font-weight: bold;
 }
 
-.post-content {
-  color: grey;
+.post-creation {
+  opacity: 0.7;
 }
 
 .g-links {
