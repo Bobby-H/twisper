@@ -1,16 +1,16 @@
 <div class="row">
   <div class="col-xs-3">
+
     <div class="panel panel-default">
-      <div class="panel-footer">
-        <div class="row">
-          <div class="col-sm-2"><img src="/logo.png" height="50px" width="50px" class="rounded-img home-avatar"></div>
-          <div class="col-sm-10"><h4 style="text-align: center;"><%= current_user.username %></h4></div>
-          <div class="col-sm-12" style="font-size: 80%; opacity: 0.7;">POSTS<br>
-            <h6 style="color: #0084B4; font-size: 200%;">16</h6>
-          </div>
-          <div class="col-sm-12" style="font-size: 80%; opacity: 0.7;">FOLLOWERS<br>
-            <h6 style="color: #0084B4; font-size: 200%;">15</h6>
-          </div>
+      <div class="panel-image hide-panel-body">
+        <img src="/banner.jpg" class="panel-image-preview">
+      </div>
+      <div class="panel-footer text-center">
+        <div class="col-sm-2">
+          <!-- <img src="/logo.png" class="rounded-img"> -->
+        </div>
+        <div class="col-sm-10">
+
         </div>
       </div>
     </div>
@@ -26,6 +26,7 @@
       </div>
     </div>
   </div>
+</div>
 
   <div class="col-xs-6">
     <center><%= render 'components/post_form' %></center><br><br>
