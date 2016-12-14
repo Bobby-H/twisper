@@ -37,6 +37,7 @@
         <% end %>
     </div>
   <div class="col-xs-3">
+    <%= render 'components/follow_btn', :user => User.find_by_username(params[:id]) %><br><br>
     <div class="panel panel-default">
       <div class="panel-body">
         <h5 style="color: grey; font-size: 125%;">Who to follow</h5>
